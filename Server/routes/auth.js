@@ -20,7 +20,7 @@ router.post('/registro', async (req, res) => {
 });
 
 // Inicio de sesión
-router.post('/login', async (req, res) => {
+router.post('/inicio-sesion', async (req, res) => {
     const { correo, contraseña } = req.body;
     try {
         const usuario = await Usuario.findOne({ correo });
